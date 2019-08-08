@@ -23,7 +23,7 @@ var posts *mgo.Collection
 
 func main() {
 	// Connect to mongo
-	session, err := mgo.Dial("mongo:27017")
+	session, err := mgo.Dial("localhost:27017")
 	if err != nil {
 		log.Fatalln(err)
 		log.Fatalln("mongo err")
